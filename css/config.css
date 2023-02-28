@@ -24,8 +24,8 @@ body {
     --font-inter: 'Inter', sans-serif;
     --font-barlow: 'Barlow', sans-serif;
     --font-poppins: 'Poppins', sans-serif;
-    --ciano-default-color: #00e7f9;
-    --ciano-hover: #00b4c1;
+    --orange-default-color: #ffb700;
+    --orange-hover: #ffb000;
     --blue-dark-color: #0F1116;
     --white: rgb(250, 250, 250);
     --black: #000000;
@@ -43,5 +43,5 @@ body {
 }
 
 .destaque {
-    color: var(--ciano-default-color);
+    color: var(--orange-default-color);
 }
