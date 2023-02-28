@@ -51,7 +51,7 @@
 }
 
 .container_header .menu_header .list_header .iten_header .link_iten:hover {
-    color: var(--ciano-default-color);
+    color: var(--orange-default-color);
 }
 
 .container_header .menu_header .button_header {
@@ -139,7 +139,7 @@
     width: 27rem;
     height: 4rem;
     border-radius: .5rem;
-    background-color: var(--ciano-default-color);
+    background-color: var(--orange-default-color);
     color: var(--black);
     font-weight: 600;
     cursor: pointer;
@@ -147,7 +147,7 @@
 }
 
 .section_main .container_main .button:hover {
-    background-color: var(--ciano-hover);
+    background-color: var(--orange-hover);
 }
 
 .section_main .navigation_main .list_main{
@@ -163,7 +163,7 @@
 }
 
 .section_main .navigation_main .list_main .iten_main .link .icons:hover {
-    color: var(--ciano-default-color);
+    color: var(--orange-default-color);
 }
 
 .section_sobre {
@@ -178,7 +178,7 @@
     height: 45rem;
     object-fit: contain;
     border-radius: 100%;
-    box-shadow: .1rem .1rem 1rem .1rem var(--ciano-default-color);;
+    box-shadow: .1rem .1rem 1rem .1rem var(--orange-default-color);;
 }
 
 .section_sobre .container_sobre {
@@ -233,18 +233,18 @@
 }
 
 .section_sobre .container_sobre .container_button .button_cv {
-    background-color: var(--ciano-default-color);
+    background-color: var(--orange-default-color);
 }
 .section_sobre .container_sobre .container_button .button_cv:hover {
-    background-color: var(--ciano-hover);
+    background-color: var(--orange-hover);
 }
 .section_sobre .container_sobre .container_button .button_email {
     background-color: transparent;
-    border: .1rem solid var(--ciano-default-color);
-    color: var(--ciano-default-color);
+    border: .1rem solid var(--orange-default-color);
+    color: var(--orange-default-color);
 }
 .section_sobre .container_sobre .container_button .button_email:hover {
-    background-color: var(--ciano-default-color);
+    background-color: var(--orange-default-color);
     color: var(--black);
 }
 
@@ -265,7 +265,7 @@
     font-family: var(--font-inter);
     font-weight: 900;
     font-size: 6rem;
-    color: var(--ciano-default-color);
+    color: var(--orange-default-color);
 }
 .section_destaque .bloco_destaque .numero {
     font-family: var(--font-inter);
@@ -320,8 +320,8 @@
 }
 
 .section_qualificacoes .bloco_button .ativo {
-    color: var(--ciano-default-color);
-    border-color: var(--ciano-default-color);
+    color: var(--orange-default-color);
+    border-color: var(--orange-default-color);
 }
 
 .section_qualificacoes .container_qualificacoes .lista, .lista_work {
@@ -361,8 +361,8 @@
     right: -.5rem;
     width: .8rem;
     height: .8rem;
-    background-color: var(--ciano-default-color);
-    box-shadow: .1rem 0rem 1rem .1rem var(--ciano-default-color);
+    background-color: var(--orange-default-color);
+    box-shadow: .1rem 0rem 1rem .1rem var(--orange-default-color);
     border-radius: 100%;
 }
 
@@ -385,7 +385,7 @@
     border-radius: 100%;
     font-size: 1.8rem;
     padding: 1.5rem;
-    color: var(--ciano-default-color);
+    color: var(--orange-default-color);
 }
 
 .section_qualificacoes .container_qualificacoes .lista .item-work .header_qualificacoes .icon  {
@@ -425,9 +425,9 @@
     width: 100%;
     height: 4rem;
     background-color: transparent;
-    border: .1rem solid var(--ciano-default-color);
+    border: .1rem solid var(--orange-default-color);
     border-radius: .5rem;
-    color: var(--ciano-default-color);
+    color: var(--orange-default-color);
     cursor: pointer;
     transition: all .3s;
 }
@@ -455,7 +455,7 @@
     font-weight: 700;
     font-size: 3.4rem;
     color: var(--white);
-    border-right: .1rem solid var(--ciano-default-color);
+    border-right: .1rem solid var(--orange-default-color);
 }
 
 .section_servico .cabecalho_servico .descricao {
@@ -496,7 +496,7 @@
 .section_tech .titulo_tech {
     text-align: center;
     font-size: 3rem;
-    color: var(--ciano-default-color);
+    color: var(--orange-default-color);
     margin-bottom: 5rem;
 }
 
@@ -520,11 +520,11 @@
 
 .section_tech .container_tech .bloco_tech i{
     font-size: 3rem;
-    color: var(--ciano-default-color);
+    color: var(--orange-default-color);
 }
 
 .section_tech .container_tech .bloco_tech .tailwind {
-    background-color: var(--ciano-default-color);
+    background-color: var(--orange-default-color);
     padding: .3rem;
     border-radius: .5rem;
 }
@@ -540,7 +540,7 @@
 .section_projetos .titulo_projeto {
     text-align: center;
     font-size: 3rem;
-    color: var(--ciano-default-color);
+    color: var(--orange-default-color);
     margin-bottom: 5rem;
 }
 
@@ -612,7 +612,7 @@
 }
 
 .section_projetos .container_projetos .card_projeto .card_descricao .card_nav .site {
-    background-color: var(--ciano-default-color);
+    background-color: var(--orange-default-color);
 }
 
 .section_projetos .container_button {
@@ -627,14 +627,14 @@
     height: 4rem;
     border-radius: .5rem;
     background-color: transparent;
-    border: .1rem solid var(--ciano-default-color);
-    color: var(--ciano-default-color);
+    border: .1rem solid var(--orange-default-color);
+    color: var(--orange-default-color);
     cursor: pointer;
     transition: all .3s;
 }
 
 .section_projetos .container_button .botao_github:hover {
-    background-color: var(--ciano-default-color);
+    background-color: var(--orange-default-color);
     color: var(--black);
 }
 
@@ -653,7 +653,7 @@
     font-family: var(--font-inter);
     font-size: 6rem;
     letter-spacing: .2rem;
-    color: var(--ciano-default-color);
+    color: var(--orange-default-color);
     display: inline;
     padding-right: 1rem;
 } 
@@ -701,7 +701,7 @@
 
 .section_contato .lista_rede .item_rede .icon  {
     font-size: 3rem;
-    color: var(--ciano-default-color);
+    color: var(--orange-default-color);
 }
 
 .botao_topo {
@@ -723,7 +723,7 @@
 .botao_topo .icone {
     font-size: 2rem;
     padding-right: 1rem;
-    color: var(--ciano-default-color);
+    color: var(--orange-default-color);
     animation: UpArrow 1s infinite;
 }
 
