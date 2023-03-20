@@ -43,7 +43,7 @@
     padding: 4rem;
 }
 
-.container_header .menu_header .list_header .iten_header .link_iten{
+.container_header .menu_header .list_header .iten_header .link_iten {
     font-family: var(--font-inter);
     font-size: 2rem;
     color: var(--white);
@@ -66,7 +66,8 @@
     color: var(--white);
 }
 
-.container_header .menu_header .button_header .menu_icone-header::after, .menu_icone-header::before {
+.container_header .menu_header .button_header .menu_icone-header::after,
+.menu_icone-header::before {
     content: '';
     display: block;
     width: 3rem;
@@ -80,15 +81,17 @@
 .container_header .menu_header.active .button_header .menu_icone-header {
     border-top-color: transparent;
 }
+
 .container_header .menu_header.active .button_header .menu_icone-header::before {
     transform: rotate(135deg);
 }
+
 .container_header .menu_header.active .button_header .menu_icone-header::after {
     transform: rotate(-135deg);
     top: -.7rem;
 }
 
-.section_main  {
+.section_main {
     padding: 30rem 0 11rem 0;
     display: flex;
     flex-direction: column;
@@ -120,7 +123,7 @@
     margin-top: 1rem;
 }
 
-.section_main .container_main .cargo_main{
+.section_main .container_main .cargo_main {
     font-family: var(--font-inter);
     font-weight: 600;
     font-size: 7.5rem;
@@ -150,13 +153,13 @@
     background-color: var(--orange-hover);
 }
 
-.section_main .navigation_main .list_main{
+.section_main .navigation_main .list_main {
     display: flex;
     gap: 2rem;
     margin-top: 10rem;
 }
 
-.section_main .navigation_main .list_main .iten_main .link .icons{
+.section_main .navigation_main .list_main .iten_main .link .icons {
     font-size: 3rem;
     transition: all .3s;
     color: var(--white);
@@ -173,12 +176,13 @@
     gap: 3rem;
 }
 
-.section_sobre .foto_perfil{
+.section_sobre .foto_perfil {
     min-width: 45rem;
     height: 45rem;
     object-fit: contain;
     border-radius: 100%;
-    box-shadow: .1rem .1rem 1rem .1rem var(--orange-default-color);;
+    box-shadow: .1rem .1rem 1rem .1rem var(--orange-default-color);
+    ;
 }
 
 .section_sobre .container_sobre {
@@ -219,11 +223,13 @@
     display: flex;
     gap: 1rem;
 }
-.section_sobre .container_sobre .container_button .link{
+
+.section_sobre .container_sobre .container_button .link {
     width: 100%;
 }
 
-.section_sobre .container_sobre .container_button .button_cv, .button_email {
+.section_sobre .container_sobre .container_button .button_cv,
+.button_email {
     width: 100%;
     height: 4.5rem;
     border-radius: .5rem;
@@ -235,14 +241,17 @@
 .section_sobre .container_sobre .container_button .button_cv {
     background-color: var(--orange-default-color);
 }
+
 .section_sobre .container_sobre .container_button .button_cv:hover {
     background-color: var(--orange-hover);
 }
+
 .section_sobre .container_sobre .container_button .button_email {
     background-color: transparent;
     border: .1rem solid var(--orange-default-color);
     color: var(--orange-default-color);
 }
+
 .section_sobre .container_sobre .container_button .button_email:hover {
     background-color: var(--orange-default-color);
     color: var(--black);
@@ -261,12 +270,14 @@
 .section_destaque .bloco_destaque {
     width: 19rem;
 }
+
 .section_destaque .bloco_destaque .destaque_numero {
     font-family: var(--font-inter);
     font-weight: 900;
     font-size: 6rem;
     color: var(--orange-default-color);
 }
+
 .section_destaque .bloco_destaque .numero {
     font-family: var(--font-inter);
     font-weight: 900;
@@ -288,7 +299,7 @@
     margin-bottom: 2rem;
 }
 
-.section_qualificacoes .cabecalho .titulo{
+.section_qualificacoes .cabecalho .titulo {
     font-family: var(--font-inter);
     font-size: 3.5rem;
     max-width: 60rem;
@@ -315,6 +326,7 @@
     cursor: pointer;
     transition: .3s all;
 }
+
 .section_qualificacoes .bloco_button .button:first-child {
     border-right: .1rem solid #ccc;
 }
@@ -324,7 +336,8 @@
     border-color: var(--orange-default-color);
 }
 
-.section_qualificacoes .container_qualificacoes .lista, .lista_work {
+.section_qualificacoes .container_qualificacoes .lista,
+.lista_work {
     max-width: 60rem;
     margin: 0 auto;
     animation: Up 0.8s;
@@ -340,7 +353,7 @@
     background-color: #474747;
 }
 
-.section_qualificacoes .container_qualificacoes .lista .li{
+.section_qualificacoes .container_qualificacoes .lista .li {
     width: 30rem;
     padding: 1rem 2rem;
     position: relative;
@@ -354,7 +367,8 @@
     padding: 2rem;
 }
 
-.section_qualificacoes .container_qualificacoes .lista .rigth::after, .left::after {
+.section_qualificacoes .container_qualificacoes .lista .rigth::after,
+.left::after {
     content: '';
     position: absolute;
     top: 3rem;
@@ -388,7 +402,7 @@
     color: var(--orange-default-color);
 }
 
-.section_qualificacoes .container_qualificacoes .lista .item-work .header_qualificacoes .icon  {
+.section_qualificacoes .container_qualificacoes .lista .item-work .header_qualificacoes .icon {
     background-color: var(--black-100);
 }
 
@@ -416,6 +430,7 @@
     color: #818181;
     margin: 1rem 0 2rem 0;
 }
+
 .section_qualificacoes .container_qualificacoes .lista .li .conclusao i {
     margin-right: .7rem;
     color: var(--white);
@@ -518,7 +533,7 @@
     padding-left: 2rem;
 }
 
-.section_tech .container_tech .bloco_tech i{
+.section_tech .container_tech .bloco_tech i {
     font-size: 3rem;
     color: var(--orange-default-color);
 }
@@ -529,11 +544,12 @@
     border-radius: .5rem;
 }
 
-.section_tech .container_tech .bloco_tech .typescript, .node {
+.section_tech .container_tech .bloco_tech .typescript,
+.node {
     width: 4rem;
 }
 
-.section_tech .container_tech .bloco_tech .nome_tech{
+.section_tech .container_tech .bloco_tech .nome_tech {
     color: #ccc;
 }
 
@@ -560,7 +576,7 @@
     position: relative;
 }
 
-.section_projetos .container_projetos .card_projeto .imagem_fundo{
+.section_projetos .container_projetos .card_projeto .imagem_fundo {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -587,9 +603,9 @@
     animation: Up 0.8s;
 }
 
-.section_projetos .container_projetos .card_projeto .card_descricao .titulo_card{
+.section_projetos .container_projetos .card_projeto .card_descricao .titulo_card {
     color: var(--white);
-    font-size: 2.4rem; 
+    font-size: 2.4rem;
 }
 
 .section_projetos .container_projetos .card_projeto .card_descricao .card_nav {
@@ -607,6 +623,7 @@
     background-color: transparent;
     cursor: pointer;
 }
+
 .section_projetos .container_projetos .card_projeto .card_descricao .card_nav .github {
     background-color: rgb(166, 0, 255);
 }
@@ -622,7 +639,7 @@
     margin: 3rem 0;
 }
 
-.section_projetos .container_button .botao_github{
+.section_projetos .container_button .botao_github {
     width: 30rem;
     height: 4rem;
     border-radius: .5rem;
@@ -656,16 +673,16 @@
     color: var(--orange-default-color);
     display: inline;
     padding-right: 1rem;
-} 
+}
 
-.section_contato .cabecalho_contato .descricao{
+.section_contato .cabecalho_contato .descricao {
     width: 100%;
     max-width: 50rem;
     color: var(--white);
     margin: 1rem 0 2rem 0;
     font-size: 1.8rem;
     text-align: center;
-} 
+}
 
 .section_contato .lista_rede {
     display: flex;
@@ -699,7 +716,7 @@
     color: var(--white);
 }
 
-.section_contato .lista_rede .item_rede .icon  {
+.section_contato .lista_rede .item_rede .icon {
     font-size: 3rem;
     color: var(--orange-default-color);
 }
@@ -741,7 +758,7 @@
     color: var(--white);
 }
 
-@media (min-width: 621px) { 
+@media (min-width: 621px) {
     .section_qualificacoes .container_qualificacoes .lista .left::after {
         content: '';
         left: -.3rem;
@@ -753,6 +770,7 @@
         min-width: 40rem;
         height: 40rem;
     }
+
     .section_projetos .container_projetos {
         flex-wrap: wrap;
     }
@@ -763,9 +781,11 @@
         font-size: 3rem;
 
     }
+
     .section_main .container_main .cargo_main {
         font-size: 5rem;
     }
+
     .section_sobre {
         flex-direction: column;
         align-items: center;
@@ -781,89 +801,112 @@
     .section_servico .container_servico {
         justify-content: center;
     }
+
     .section_servico .cabecalho_servico .titulo {
-        width: 100%; 
+        width: 100%;
         margin: 0 auto;
         text-align: center;
         border: none;
     }
+
     .section_servico .cabecalho_servico .descricao {
         display: none;
     }
 }
+
 @media (max-width: 620px) {
     .section_main .container_main .cargo_main {
         font-size: 3.5rem;
     }
+
     .section_sobre .foto_perfil {
         display: none;
     }
-    .section_sobre .container_sobre .titulo_sobre{
+
+    .section_sobre .container_sobre .titulo_sobre {
         font-size: 2.3rem;
     }
+
     .section_destaque .bloco_destaque .destaque_descricao {
         text-align: center;
     }
+
     .section_qualificacoes .container_qualificacoes {
         width: 31rem;
         margin: 0 auto;
     }
+
     .section_qualificacoes .container_qualificacoes #educacao::before {
         left: -.7rem;
     }
+
     .section_qualificacoes .container_qualificacoes #educacao li {
         margin-right: 0;
         left: 0;
     }
+
     .section_qualificacoes .container_qualificacoes .lista li::after {
         left: -1rem;
     }
 
 }
+
 @media (max-width: 430px) {
     html {
         font-size: 60%;
     }
+
     .section_main .container_main .descricao_main {
         font-size: 2.2rem;
     }
+
     .section_main .container_main .cargo_main {
         font-size: 2.8rem;
-    } 
+    }
+
     .section_main .container_main .descricao_main {
         font-size: 1.4rem;
         max-width: 90%;
     }
+
     .section_sobre .container_sobre .titulo_sobre {
         font-size: 2rem;
     }
+
     .section_contato .cabecalho_contato .titulo {
         font-size: 4.2rem;
     }
+
     .section_qualificacoes .cabecalho .titulo {
         font-size: 2.8rem;
     }
-    .section_qualificacoes .container_qualificacoes .lista_work .item-work  {
+
+    .section_qualificacoes .container_qualificacoes .lista_work .item-work {
         width: 30rem;
     }
+
     .section_servico .cabecalho_servico .titulo {
         font-size: 2.9rem;
     }
 }
+
 @keyframes Up {
     from {
         opacity: 0;
         transform: translateY(2rem);
     }
+
     to {
         opacity: 1;
     }
 }
+
 @keyframes UpArrow {
     from {
         opacity: 0;
         transform: translateY(1rem);
     }
+
     to {
         opacity: 1;
         transform: translateY(-1rem);
