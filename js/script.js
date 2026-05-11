@@ -1,51 +1,56 @@
-const buttonDropdown = document.querySelector(".button_header");
-const menuDropdown = document.querySelector(".menu_header");
-buttonDropdown.addEventListener("click", ()=> menuDropdown.classList.toggle("active"));
+// ── Navigation toggle ────────────────────────────────────
+const navToggle = document.querySelector('.nav__toggle');
+const navList   = document.querySelector('.nav__list');
 
-const cursoButton = [...document.querySelector(".bloco_button").children];
-const cursos = [...document.querySelector(".container_qualificacoes").children];
-const educacao = document.querySelector(".educacao");
+navToggle.addEventListener('click', () => {
+    const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+    navToggle.setAttribute('aria-expanded', String(!expanded));
+    navToggle.classList.toggle('active');
+    navList.classList.toggle('open');
+});
 
-function esconderCursos () {
-    cursos.forEach(curso => {curso.style.display = "none"});
-    cursoButton.forEach(button => {button.classList.remove("ativo")});
-}
+document.querySelectorAll('.nav__link').forEach(link => {
+    link.addEventListener('click', () => {
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.classList.remove('active');
+        navList.classList.remove('open');
+    });
+});
 
-function cursoTarget (id) {
-    const cursoCurrent = document.querySelector("#" + id);
-    cursoCurrent.style.display = "block"
-}
+// ── Header scroll effect ─────────────────────────────────
+const header = document.querySelector('.header');
+window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 60);
+}, { passive: true });
 
-function selecionarCurso () {
-    cursoButton.forEach (button => {
-        button.addEventListener("click", (target)=> {
-            esconderCursos();
-            const cursoAtual = target.currentTarget;
-            cursoTarget(cursoAtual.dataset.id);
-            cursoAtual.className += " ativo"
-        })
-    })
-}
+// ── Tab switching ─────────────────────────────────────────
+const tabBtns     = document.querySelectorAll('.tab-btn');
+const tabContents = document.querySelectorAll('.tab-content');
 
-function execute () {
-    esconderCursos();
-    selecionarCurso()
-    educacao.click()
-}
+tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        tabBtns.forEach(b => b.classList.remove('tab-btn--active'));
+        btn.classList.add('tab-btn--active');
 
-window.addEventListener("load", execute())
+        const target = btn.dataset.tab;
+        tabContents.forEach(content => {
+            content.classList.toggle('hidden', content.id !== target);
+        });
+    });
+});
 
-const botaoCopiar = document.querySelectorAll(".botaoCopiar");
-botaoCopiar.forEach(item => {
-    item.addEventListener('click', ()=> {
-        if(navigator.clipboard.writeText(item.value)) {
-            item.id = "email-copiado_check"
-            item.textContent = "Email copiado";
-        }
-    
-        setInterval(()=> {
-            item.id= "email-copiado_check";
-            item.textContent = "Copiar email"
-        }, 3000);
-    })
-})
+// ── Email copy ────────────────────────────────────────────
+document.querySelectorAll('.botaoCopiar').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const email    = btn.value;
+        const original = btn.innerHTML;
+
+        navigator.clipboard.writeText(email).then(() => {
+            btn.textContent = '✓ Email copiado!';
+            setTimeout(() => { btn.innerHTML = original; }, 3000);
+        }).catch(() => {
+            btn.textContent = email;
+            setTimeout(() => { btn.innerHTML = original; }, 3000);
+        });
+    });
+});
