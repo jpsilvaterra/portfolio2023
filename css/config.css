@@ -24,12 +24,12 @@ html {
     /* Borders */
     --border:        rgba(255, 255, 255, 0.07);
     --border-hover:  rgba(255, 255, 255, 0.14);
-    --border-accent: rgba(91, 159, 255, 0.35);
+    --border-accent: rgba(184, 153, 104, 0.35);
 
-    /* Accent — blue */
-    --accent:        #5B9FFF;
-    --accent-hover:  #3B82F6;
-    --accent-subtle: rgba(91, 159, 255, 0.10);
+    /* Accent — gold */
+    --accent:        #B89968;
+    --accent-hover:  #A07840;
+    --accent-subtle: rgba(184, 153, 104, 0.10);
 
     /* Text */
     --text:   #EDF2F7;
