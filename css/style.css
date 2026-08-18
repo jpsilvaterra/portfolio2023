@@ -40,10 +40,42 @@
 }
 .nav__brand:hover { color: var(--accent); }
 
+.nav__right {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
 .nav__list {
     display: flex;
     align-items: center;
     gap: 0.4rem;
+}
+
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--font-inter);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-2);
+    background: var(--surface);
+    border: 1px solid var(--border-hover);
+    padding: 0.6rem 1.2rem;
+    border-radius: 10rem;
+    white-space: nowrap;
+    transition: border-color 0.2s, color 0.2s, background 0.2s, transform 0.2s;
+}
+.lang-switch:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-subtle);
+    transform: translateY(-1px);
+}
+.lang-switch__flag {
+    font-size: 1.5rem;
+    line-height: 1;
 }
 
 .nav__link {
