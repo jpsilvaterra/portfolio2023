@@ -45,8 +45,10 @@ document.querySelectorAll('.botaoCopiar').forEach(btn => {
         const email    = btn.value;
         const original = btn.innerHTML;
 
+        const copiedLabel = document.documentElement.lang === 'en' ? '✓ Email copied!' : '✓ Email copiado!';
+
         navigator.clipboard.writeText(email).then(() => {
-            btn.textContent = '✓ Email copiado!';
+            btn.textContent = copiedLabel;
             setTimeout(() => { btn.innerHTML = original; }, 3000);
         }).catch(() => {
             btn.textContent = email;
